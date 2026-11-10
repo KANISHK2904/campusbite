@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "primary": "#ab3500", "surface-container-highest": "#e2e2e4", "secondary-fixed": "#99f5ca", "surface-container-lowest": "#ffffff", "on-secondary-container": "#007351", "primary-fixed": "#ffdbd0", "surface-dim": "#d9dadc", "on-surface-variant": "#594139", "on-tertiary-fixed-variant": "#663e00", "on-primary": "#ffffff", "tertiary": "#865300", "inverse-on-surface": "#f0f0f2", "surface-container-low": "#f3f3f5", "primary-fixed-dim": "#ffb59d", "on-tertiary": "#ffffff", "secondary-container": "#99f5ca", "on-surface": "#1a1c1d", "tertiary-fixed-dim": "#ffb961", "surface-bright": "#f9f9fb", "on-tertiary-fixed": "#2b1700", "tertiary-fixed": "#ffddb9", "error": "#ba1a1a", "surface-container-high": "#e8e8ea", "on-secondary-fixed-variant": "#005138", "on-primary-fixed-variant": "#832600", "surface-container": "#edeef0", "outline": "#8d7168", "secondary": "#006c4c", "on-background": "#1a1c1d", "inverse-primary": "#ffb59d", "primary-container": "#ff6b35", "on-error": "#ffffff", "surface-variant": "#e2e2e4", "on-primary-fixed": "#390c00", "tertiary-container": "#d78800", "surface-tint": "#ab3500", "surface": "#f9f9fb", "inverse-surface": "#2f3132", "on-primary-container": "#5f1900", "background": "#f9f9fb", "on-secondary": "#ffffff", "on-tertiary-container": "#492b00", "outline-variant": "#e1bfb5", "on-error-container": "#93000a", "on-secondary-fixed": "#002114", "secondary-fixed-dim": "#7dd8af", "error-container": "#ffdad6" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xs": "0.25rem", "margin-tablet": "1.5rem", "space-lg": "1.5rem", "space-2xs": "0.125rem", "gutter-sm": "0.75rem", "space-md": "1rem", "margin-desktop": "2rem", "space-sm": "0.5rem", "margin": "1rem", "space-2xl": "3rem", "gutter": "1rem", "space-xl": "2rem" }, fontFamily: { "headline-lg": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"] }, fontSize: { "headline-lg": ["28px", { "lineHeight": "36px", "fontWeight": "700" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.4px", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.2px", "fontWeight": "600" }], "display-lg": ["36px", { "lineHeight": "44px", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.1px", "fontWeight": "600" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-space-md flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="flex flex-col"><span class="font-label-sm text-on-surface-variant uppercase tracking-wider">CampusBite Admin</span><span class="font-title-md text-on-surface leading-tight">Admin Dashboard</span></div><div class="flex items-center gap-space-2xs px-space-sm py-0.5 rounded-full bg-secondary-container text-on-secondary-container"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-label-sm">Live</span></div></div><div class="flex items-center gap-space-xs"><button aria-label="Switch Counter Outlet" class="w-11 h-11 flex items-center justify-center text-on-surface-variant hover:text-on-surface rounded-full transition-colors"><span class="material-symbols-outlined text-[22px]">store</span></button><button aria-label="Notifications" class="w-11 h-11 flex items-center justify-center text-on-surface-variant hover:text-on-surface rounded-full transition-colors relative"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-primary"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-1"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full px-margin pb-space-2xl gap-space-lg">
+<!-- Header Context & Outlet Identity Card -->
+<section class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Manage Inventory</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Live campus dining catalog &amp; availability</span>
+</div>
+<div class="flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-secondary-container text-on-secondary-container shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+<span class="font-label-md text-label-md uppercase tracking-wider">Store Open</span>
+</div>
+</div>
+<!-- Outlet Place Name Card (Blank/Editable Template) -->
+<div class="flex flex-col gap-space-xs p-space-md rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider" for="outlet-name-input">
+          Campus Outlet / Place Name
+        </label>
+<span class="material-symbols-outlined text-[18px] text-primary-container">edit_note</span>
+</div>
+<div class="relative flex items-center">
+<input class="w-full bg-surface-container-low rounded-lg px-space-md py-2.5 font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest shadow-inner" id="outlet-name-input" placeholder="Enter place or outlet name..." type="text" value=""/>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Items added below will appear under this place menu for students.
+      </p>
+</div>
+</section>
+<!-- Metrics Row (Zero Data State) -->
+<section class="grid grid-cols-3 gap-space-xs">
+<div class="flex flex-col p-space-sm rounded-xl bg-surface-container-lowest shadow-sm items-center text-center">
+<span class="font-headline-md text-headline-md text-on-surface">0</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Active Items</span>
+</div>
+<div class="flex flex-col p-space-sm rounded-xl bg-surface-container-lowest shadow-sm items-center text-center">
+<span class="font-headline-md text-headline-md text-on-surface">0</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Categories</span>
+</div>
+<div class="flex flex-col p-space-sm rounded-xl bg-surface-container-lowest shadow-sm items-center text-center">
+<span class="font-headline-md text-headline-md text-error">0</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Out of Stock</span>
+</div>
+</section>
+<!-- Filter Chips Bar (0 Counts) -->
+<section class="flex items-center gap-space-xs overflow-x-auto pb-1 no-scrollbar">
+<button class="flex items-center px-space-md py-1.5 rounded-full bg-primary-container text-on-primary font-label-md text-label-md whitespace-nowrap shadow-sm">
+      All (0)
+    </button>
+<button class="flex items-center px-space-md py-1.5 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-md text-label-md whitespace-nowrap shadow-sm">
+      Snacks (0)
+    </button>
+<button class="flex items-center px-space-md py-1.5 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-md text-label-md whitespace-nowrap shadow-sm">
+      Meals (0)
+    </button>
+<button class="flex items-center px-space-md py-1.5 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-md text-label-md whitespace-nowrap shadow-sm">
+      Beverages (0)
+    </button>
+<button class="flex items-center gap-1 px-space-md py-1.5 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md whitespace-nowrap shadow-sm">
+<span class="material-symbols-outlined text-[16px]">add</span>
+      New Category
+    </button>
+</section>
+<!-- Empty State Section -->
+<section class="flex flex-col items-center justify-center p-space-xl rounded-xl bg-surface-container-lowest shadow-sm text-center gap-space-md">
+<!-- Playful SVG Empty Pantry Illustration -->
+<div class="w-28 h-28 rounded-full bg-surface-container-low flex items-center justify-center shadow-inner relative">
+<svg class="w-16 h-16 text-primary-container" fill="none" viewbox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 24L32 14L52 24V46L32 56L12 46V24Z" fill="#FFF0EB" stroke="currentColor" stroke-linejoin="round" stroke-width="2.5"></path>
+<path d="M12 24L32 34L52 24" stroke="currentColor" stroke-linejoin="round" stroke-width="2.5"></path>
+<path d="M32 34V56" stroke="currentColor" stroke-linejoin="round" stroke-width="2.5"></path>
+<circle cx="32" cy="22" fill="#AB3500" r="3"></circle>
+<path d="M26 11L38 17" stroke="#AB3500" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+<span class="absolute -top-1 -right-1 flex h-6 w-6 items-center justify-center rounded-full bg-primary-container text-on-primary">
+<span class="material-symbols-outlined text-[16px]">inventory_2</span>
+</span>
+</div>
+<div class="flex flex-col gap-1 max-w-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">No items added yet</span>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        No items added yet. Tap + to add your first item and start serving hungry students.
+      </p>
+</div>
+<button class="flex items-center gap-space-xs px-space-lg py-3 rounded-full bg-primary-container text-on-primary font-label-lg text-label-lg shadow-md active:scale-95 transition-transform" id="open-modal-trigger" type="button">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+      Create First Item
+    </button>
+</section>
+<!-- Structural Preview Skeleton Template Card -->
+<section class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between px-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Item Card Layout Preview (Empty)</span>
+<span class="font-label-sm text-label-sm text-outline">Structural Wireframe</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md min-w-0">
+<!-- Placeholder Photo Slot -->
+<div class="w-16 h-16 rounded-lg bg-surface-container flex items-center justify-center text-outline shrink-0">
+<span class="material-symbols-outlined text-[28px]">restaurant</span>
+</div>
+<!-- Meta Wireframe -->
+<div class="flex flex-col min-w-0 gap-0.5">
+<span class="font-title-md text-title-md text-on-surface-variant truncate">Item name</span>
+<span class="font-label-md text-label-md text-outline truncate">Category</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">₹0 · Qty: 0</span>
+</div>
+</div>
+<!-- Blank Toggle -->
+<div class="flex flex-col items-end gap-1 shrink-0">
+<span class="font-label-sm text-label-sm text-outline">Available</span>
+<div class="w-11 h-6 bg-surface-container-highest rounded-full p-0.5 flex items-center transition-colors">
+<div class="w-5 h-5 bg-surface-container-lowest rounded-full shadow-sm"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Floating Sticky Action Button -->
+<div class="fixed bottom-20 right-4 z-40">
+<button aria-label="Add New Item" class="flex items-center gap-2 px-space-lg h-14 rounded-full bg-primary-container text-on-primary font-label-lg text-label-lg shadow-xl active:scale-95 transition-transform" id="fab-add-item" type="button">
+<span class="material-symbols-outlined text-[24px]">add</span>
+<span>Add Item</span>
+</button>
+</div>
+<!-- Form Bottom Sheet / Modal Interface -->
+<div aria-labelledby="modal-headline" aria-modal="true" class="fixed inset-0 z-50 flex flex-col justify-end bg-inverse-surface/40 backdrop-blur-sm transition-opacity duration-300 opacity-0 pointer-events-none" id="item-modal" role="dialog">
+<div class="w-full max-h-[777px] overflow-y-auto bg-surface-container-lowest rounded-t-2xl p-space-lg shadow-2xl flex flex-col gap-space-md">
+<!-- Modal Header -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">fastfood</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface" id="modal-headline">Add New Item</h2>
+</div>
+<button aria-label="Close dialog" class="w-9 h-9 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:text-on-surface" id="close-modal-trigger" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Blank Form Fields -->
+<form class="flex flex-col gap-space-md" onsubmit="event.preventDefault();">
+<!-- Photo Upload Slot -->
+<div class="flex flex-col gap-space-2xs">
+<label class="font-label-md text-label-md text-on-surface-variant">Photo Upload</label>
+<div class="w-full h-32 rounded-xl bg-surface-container-low flex flex-col items-center justify-center gap-1 text-center p-space-sm cursor-pointer shadow-inner">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary-container shadow-sm">
+<span class="material-symbols-outlined text-[22px]">add_a_photo</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface">Tap to upload item photo</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">JPG, PNG up to 5MB (Optional)</span>
+</div>
+</div>
+<!-- Item Name -->
+<div class="flex flex-col gap-space-2xs">
+<label class="font-label-md text-label-md text-on-surface-variant" for="item-name">Item name</label>
+<input class="w-full bg-surface-container-low rounded-lg px-space-md py-3 font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest shadow-inner" id="item-name" placeholder="Enter item name (e.g. Veg Sandwich)" type="text"/>
+</div>
+<!-- Two Column: Price & Quantity -->
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="flex flex-col gap-space-2xs">
+<label class="font-label-md text-label-md text-on-surface-variant" for="item-price">Price (₹)</label>
+<div class="relative flex items-center">
+<input class="w-full bg-surface-container-low rounded-lg px-space-md py-3 font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest shadow-inner" id="item-price" inputmode="decimal" placeholder="₹0.00" type="text"/>
+</div>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<label class="font-label-md text-label-md text-on-surface-variant" for="item-qty">Available Quantity</label>
+<input class="w-full bg-surface-container-low rounded-lg px-space-md py-3 font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest shadow-inner" id="item-qty" placeholder="e.g. 50 (or blank)" type="number"/>
+</div>
+</div>
+<!-- Category Dropdown Select -->
+<div class="flex flex-col gap-space-2xs">
+<label class="font-label-md text-label-md text-on-surface-variant" for="item-category">Category</label>
+<div class="relative flex items-center">
+<select class="w-full bg-surface-container-low rounded-lg px-space-md py-3 font-body-md text-body-md text-outline focus:text-on-surface focus:outline-none focus:bg-surface-container-lowest appearance-none shadow-inner" id="item-category">
+<option disabled="" selected="" value="">Select category (e.g. Snacks, Drinks, Meals)</option>
+<option value="snacks">Snacks</option>
+<option value="meals">Meals</option>
+<option value="beverages">Beverages</option>
+<option value="quick-bites">Quick Bites</option>
+</select>
+<span class="material-symbols-outlined text-[20px] text-outline absolute right-3 pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Dietary Indicator & Stock Switches -->
+<div class="flex flex-col gap-space-sm p-space-sm rounded-xl bg-surface-container-low">
+<!-- Veg / Non-Veg Selector -->
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Dietary Classification</span>
+<div class="flex items-center gap-space-xs">
+<button class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-lowest text-secondary font-label-md text-label-md shadow-sm" type="button">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+                Veg
+              </button>
+<button class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md" type="button">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+                Non-Veg
+              </button>
+</div>
+</div>
+<!-- In Stock Toggle -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">In Stock (Available now)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Students can purchase this item</span>
+</div>
+<button aria-pressed="true" class="w-12 h-7 bg-primary-container rounded-full p-1 flex items-center justify-end transition-colors shadow-inner" id="stock-toggle" type="button">
+<div class="w-5 h-5 bg-surface-container-lowest rounded-full shadow-md"></div>
+</button>
+</div>
+</div>
+<!-- Dialog Footer Actions -->
+<div class="flex items-center gap-space-sm pt-space-xs">
+<button class="flex-1 py-3.5 rounded-full bg-surface-container text-on-surface font-label-lg text-label-lg active:scale-95 transition-transform text-center" id="cancel-modal-trigger" type="button">
+            Cancel
+          </button>
+<button class="flex-1 py-3.5 rounded-full bg-primary-container text-on-primary font-label-lg text-label-lg shadow-md active:scale-95 transition-transform text-center" type="button">
+            Save Item
+          </button>
+</div>
+</form>
+</div>
+</div>
+</div>
+<script>
+  (function initInventoryUI() {
+    const modal = document.getElementById('item-modal');
+    const fabOpen = document.getElementById('fab-add-item');
+    const btnOpen = document.getElementById('open-modal-trigger');
+    const btnClose = document.getElementById('close-modal-trigger');
+    const btnCancel = document.getElementById('cancel-modal-trigger');
+    const stockToggle = document.getElementById('stock-toggle');
+
+    function openModal() {
+      if (!modal) return;
+      modal.classList.remove('opacity-0', 'pointer-events-none');
+      modal.classList.add('opacity-100');
+    }
+
+    function closeModal() {
+      if (!modal) return;
+      modal.classList.add('opacity-0', 'pointer-events-none');
+      modal.classList.remove('opacity-100');
+    }
+
+    if (fabOpen) fabOpen.addEventListener('click', openModal);
+    if (btnOpen) btnOpen.addEventListener('click', openModal);
+    if (btnClose) btnClose.addEventListener('click', closeModal);
+    if (btnCancel) btnCancel.addEventListener('click', closeModal);
+
+    // Close on backdrop tap
+    if (modal) {
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) closeModal();
+      });
+    }
+
+    // Toggle stock micro-interaction
+    if (stockToggle) {
+      stockToggle.addEventListener('click', () => {
+        const isPressed = stockToggle.getAttribute('aria-pressed') === 'true';
+        stockToggle.setAttribute('aria-pressed', (!isPressed).toString());
+        if (isPressed) {
+          stockToggle.classList.remove('bg-primary-container', 'justify-end');
+          stockToggle.classList.add('bg-surface-container-highest', 'justify-start');
+        } else {
+          stockToggle.classList.remove('bg-surface-container-highest', 'justify-start');
+          stockToggle.classList.add('bg-primary-container', 'justify-end');
+        }
+      });
+    }
+
+    // Highlight active nav item
+    const navItems = document.querySelectorAll('nav [data-path]');
+    navItems.forEach(item => {
+      if (item.getAttribute('data-path') === 'menu-items') {
+        item.classList.add('text-primary-container', 'font-semibold');
+        item.classList.remove('text-on-surface-variant');
+      }
+    });
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.05)]" data-active-classes="text-primary-container font-semibold"><div class="flex justify-around items-center h-16 px-space-sm"><a class="flex flex-col items-center justify-center min-w-[64px] min-h-[44px] gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="admin-dashboard" href="#"><span class="material-symbols-outlined text-[24px]">dashboard</span><span class="font-label-md text-label-md">Dashboard</span></a><a class="flex flex-col items-center justify-center min-w-[64px] min-h-[44px] gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="menu-items" href="#"><span class="material-symbols-outlined text-[24px]">restaurant_menu</span><span class="font-label-md text-label-md">Items</span></a><a class="flex flex-col items-center justify-center min-w-[64px] min-h-[44px] gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors relative" data-path="live-orders" href="#"><span class="material-symbols-outlined text-[24px]">receipt_long</span><span class="font-label-md text-label-md">Orders</span></a><a class="flex flex-col items-center justify-center min-w-[64px] min-h-[44px] gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="scan-redemption" href="#"><span class="material-symbols-outlined text-[24px]">qr_code_scanner</span><span class="font-label-md text-label-md">Scan</span></a></div></nav></body></html>

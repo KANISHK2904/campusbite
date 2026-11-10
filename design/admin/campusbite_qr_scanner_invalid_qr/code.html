@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "error-container": "#ffdad6", "on-error": "#ffffff", "surface": "#f9f9fb", "on-surface-variant": "#594139", "on-primary-fixed-variant": "#832600", "tertiary-container": "#d78800", "on-secondary": "#ffffff", "primary": "#ab3500", "background": "#f9f9fb", "secondary": "#006c4c", "inverse-surface": "#2f3132", "surface-variant": "#e2e2e4", "on-secondary-fixed-variant": "#005138", "surface-dim": "#d9dadc", "inverse-on-surface": "#f0f0f2", "secondary-container": "#99f5ca", "on-primary-fixed": "#390c00", "error": "#ba1a1a", "on-tertiary": "#ffffff", "primary-fixed-dim": "#ffb59d", "surface-container": "#edeef0", "surface-container-lowest": "#ffffff", "secondary-fixed-dim": "#7dd8af", "on-secondary-fixed": "#002114", "surface-container-highest": "#e2e2e4", "inverse-primary": "#ffb59d", "outline": "#8d7168", "secondary-fixed": "#99f5ca", "surface-tint": "#ab3500", "on-tertiary-fixed-variant": "#663e00", "tertiary": "#865300", "primary-fixed": "#ffdbd0", "surface-container-high": "#e8e8ea", "tertiary-fixed": "#ffddb9", "on-tertiary-fixed": "#2b1700", "on-primary": "#ffffff", "on-tertiary-container": "#492b00", "outline-variant": "#e1bfb5", "on-secondary-container": "#007351", "surface-bright": "#f9f9fb", "on-error-container": "#93000a", "on-primary-container": "#5f1900", "on-background": "#1a1c1d", "surface-container-low": "#f3f3f5", "tertiary-fixed-dim": "#ffb961", "on-surface": "#1a1c1d", "primary-container": "#ff6b35" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-lg": "1.5rem", "space-xl": "2rem", "gutter": "1rem", "space-md": "1rem", "margin": "1rem", "gutter-sm": "0.75rem", "margin-desktop": "2rem", "space-2xs": "0.125rem", "space-xs": "0.25rem", "margin-tablet": "1.5rem", "space-2xl": "3rem", "space-sm": "0.5rem" }, "fontFamily": { "label-md": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"] }, "fontSize": { "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.2px", "fontWeight": "600" }], "headline-lg": ["28px", { "lineHeight": "36px", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "display-lg": ["36px", { "lineHeight": "44px", "fontWeight": "700" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.1px", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.4px", "fontWeight": "700" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter flex items-center justify-between"><div class="flex items-center gap-space-sm"><span class="text-primary font-headline-md font-bold tracking-tight">CampusBite</span><span class="px-space-xs py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm uppercase tracking-wide">Admin</span></div><div class="flex items-center gap-space-sm"><h1 class="font-title-md text-title-md text-on-surface line-clamp-1">Admin Qr Scanner</h1><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 w-full bg-surface pt-16 pb-24"><div class="flex flex-col w-full relative">
+<!-- Interactive Viewfinder Container with Dynamic Simulation -->
+<div class="relative w-full h-[520px] bg-inverse-surface overflow-hidden flex flex-col items-center justify-between p-gutter select-none">
+<!-- Camera Viewfinder Ambient Feed Placeholder -->
+<div class="absolute inset-0 bg-cover bg-center opacity-30 mix-blend-luminosity filter blur-[1px] scale-105" data-alt="Blurred first-person view of a university dining hall checkout counter with ambient cafe lights, blurred stainless steel trays, and soft warm indoor daylight for a campus ordering scenario." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCe6z30klmfZ8pNjrMcr5-VwtFIAjWDu78SmEO1P8PPt0VkEmt1Ihcz4uNzCM7y5jOVYPTed8UPjv9irZ6zDJPzKBYUI4C_W75U9A1z_UodnGXPQa2dVU3JPiuy9H9Dh0R_O-aSIG4Gl0N8ddYg1isisZzb1f4o7iRyVBL3phua1X6lRM4HtKPMqHzTAY87oNkxAdoxaBzmUHK2mM9u88v_XiH-Xj1WrVMdwv_RYMQ')"></div>
+<!-- Dark Scrim Layer for Error State Emphasis -->
+<div class="absolute inset-0 bg-inverse-surface/85 backdrop-blur-[2px]"></div>
+<!-- Viewfinder Header Overlay: Controls for Flashlight & Close -->
+<div class="relative z-10 w-full flex items-center justify-between pt-space-xs">
+<button aria-label="Close scanner view" class="w-10 h-10 rounded-full bg-surface-container-highest/20 hover:bg-surface-container-highest/30 active:scale-95 flex items-center justify-center text-on-primary transition-all shadow-sm" onclick="window.history.back()" type="button">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+</button>
+<div class="flex items-center gap-space-xs px-space-md py-space-2xs rounded-full bg-surface-container-highest/25 backdrop-blur-md">
+<span class="w-2 h-2 rounded-full bg-error animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-primary tracking-wider uppercase font-semibold">Reader Error</span>
+</div>
+<button aria-label="Toggle flashlight" class="w-10 h-10 rounded-full bg-surface-container-highest/20 hover:bg-surface-container-highest/30 active:scale-95 flex items-center justify-center text-on-primary transition-all shadow-sm" id="torchToggle" onclick="this.classList.toggle('bg-tertiary-container'); this.classList.toggle('text-on-tertiary-container');" type="button">
+<span class="material-symbols-outlined text-[20px]">flashlight_on</span>
+</button>
+</div>
+<!-- Center Reticle / Scanning Frame with Red Error Accents -->
+<div class="relative z-10 my-auto flex flex-col items-center justify-center">
+<div class="relative w-64 h-64 flex items-center justify-center">
+<!-- Error Reticle Corner Markers (Stylized via shapes) -->
+<div class="absolute top-0 left-0 w-8 h-8 rounded-tl-lg bg-error"></div>
+<div class="absolute top-0 left-0 w-6 h-6 rounded-tl bg-inverse-surface m-1"></div>
+<div class="absolute top-0 right-0 w-8 h-8 rounded-tr-lg bg-error"></div>
+<div class="absolute top-0 right-0 w-6 h-6 rounded-tr bg-inverse-surface m-1"></div>
+<div class="absolute bottom-0 left-0 w-8 h-8 rounded-bl-lg bg-error"></div>
+<div class="absolute bottom-0 left-0 w-6 h-6 rounded-bl bg-inverse-surface m-1"></div>
+<div class="absolute bottom-0 right-0 w-8 h-8 rounded-br-lg bg-error"></div>
+<div class="absolute bottom-0 right-0 w-6 h-6 rounded-br bg-inverse-surface m-1"></div>
+<!-- Inner Soft Ambient Red Glow -->
+<div class="absolute inset-4 rounded-xl bg-error/10 animate-pulse"></div>
+<!-- Diagonal Unrecognized Scan Hologram Cross Indicator -->
+<div class="relative flex flex-col items-center justify-center space-y-space-xs text-error/90">
+<div class="w-12 h-12 rounded-full bg-error-container/30 flex items-center justify-center">
+<span class="material-symbols-outlined text-[32px] text-error">qr_code_scanner</span>
+</div>
+<span class="font-label-sm text-label-sm tracking-widest uppercase text-error-container font-bold">Unrecognized</span>
+</div>
+</div>
+</div>
+<!-- Viewfinder Subtitle Guide -->
+<div class="relative z-10 w-full text-center pb-space-sm">
+<p class="font-body-sm text-body-sm text-surface-variant/80">
+        Align CampusBite student mobile pickup ticket within frame
+      </p>
+</div>
+</div>
+<!-- Bottom Sheet / Alert Card for "Invalid QR" Error -->
+<div class="relative -mt-6 z-20 w-full px-margin pb-space-lg flex flex-col">
+<div class="w-full bg-surface-container-lowest rounded-xl shadow-xl p-space-lg flex flex-col items-center text-center">
+<!-- Drag Handle Affordance -->
+<div class="w-10 h-1 rounded-full bg-surface-variant mb-space-md"></div>
+<!-- High-Visibility Circular Red Alert Icon Badge -->
+<div class="w-16 h-16 rounded-full bg-error-container flex items-center justify-center mb-space-md shadow-sm">
+<span class="material-symbols-outlined text-error text-[36px]" style="font-variation-settings: 'FILL' 1;">
+          error
+        </span>
+</div>
+<!-- Verbatim Primary Heading -->
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight mb-space-xs font-bold">
+        Invalid QR
+      </h2>
+<!-- Explanatory Descriptive Message -->
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md max-w-xs">
+        This QR code is not recognized as a valid CampusBite order token or belongs to another campus outlet.
+      </p>
+<!-- Token Inspection Box / Raw Payload Diagnostic -->
+<div class="w-full bg-surface-container-low rounded-lg p-space-sm mb-space-lg flex flex-col items-start gap-space-2xs text-left">
+<div class="flex items-center justify-between w-full">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Diagnostic Info</span>
+<span class="px-space-xs py-0.5 rounded bg-error-container text-on-error-container font-label-sm text-label-sm">Failed Hash</span>
+</div>
+<div class="w-full flex items-center justify-between mt-space-2xs bg-surface-container-lowest rounded p-space-xs">
+<code class="font-body-sm text-body-sm font-semibold text-on-surface tracking-mono truncate max-w-[210px]">
+            Scanned Token: UNRECOGNIZED_DATA
+          </code>
+<button class="text-primary hover:text-on-primary-container p-space-2xs active:scale-95" onclick="navigator.clipboard?.writeText('UNRECOGNIZED_DATA');" title="Copy scanned token" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+</button>
+</div>
+</div>
+<!-- Action CTA Buttons -->
+<div class="w-full flex flex-col gap-space-sm">
+<!-- Primary Action: Try Again -->
+<button class="w-full min-h-[48px] py-space-sm px-space-lg rounded-full bg-primary-container text-on-primary font-label-lg text-label-lg font-bold flex items-center justify-center gap-space-xs shadow-md active:scale-[0.98] transition-transform" id="btnScanAgain" onclick="resetScanner()" type="button">
+<span class="material-symbols-outlined text-[20px]">refresh</span>
+<span>Try Again</span>
+</button>
+<!-- Secondary Action: Manual Entry Drawer Trigger -->
+<button class="w-full min-h-[48px] py-space-sm px-space-lg rounded-full bg-secondary-container text-on-secondary-container font-label-lg text-label-lg font-semibold flex items-center justify-center gap-space-xs active:scale-[0.98] transition-transform" id="btnManualEntry" onclick="toggleManualInputModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">keyboard</span>
+<span>Enter Token Manually</span>
+</button>
+</div>
+<!-- Station Context Indicator Footer Note -->
+<div class="mt-space-md flex items-center justify-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">storefront</span>
+<span class="font-body-sm text-body-sm">Terminal #04 • Student Center Dining Hall</span>
+</div>
+</div>
+</div>
+<!-- Hidden/Toggleable Manual Code Input Dialog Overlay -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/60 backdrop-blur-sm px-gutter flex items-center justify-center hidden" id="manualInputModal">
+<div class="w-full max-w-sm bg-surface-container-lowest rounded-xl shadow-2xl p-space-lg flex flex-col">
+<div class="flex items-center justify-between mb-space-sm">
+<h3 class="font-title-md text-title-md text-on-surface">Enter Order Token</h3>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface" onclick="toggleManualInputModal()" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+        Type the alphanumeric 6-digit reference found beneath student's CampusBite QR badge.
+      </p>
+<div class="relative w-full mb-space-lg">
+<input class="w-full h-12 px-space-md rounded-lg bg-surface-container-low text-on-surface font-title-md text-title-md tracking-wider uppercase placeholder:text-outline focus:outline-none focus:bg-surface-container-high transition-colors" id="manualTokenInput" maxlength="10" placeholder="e.g. CB-8942" type="text"/>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="flex-1 min-h-[44px] rounded-full bg-surface-container text-on-surface font-label-md text-label-md" onclick="toggleManualInputModal()" type="button">
+          Cancel
+        </button>
+<button class="flex-1 min-h-[44px] rounded-full bg-primary-container text-on-primary font-label-md text-label-md font-bold" onclick="submitManualToken()" type="button">
+          Verify Order
+        </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function toggleManualInputModal() {
+    const modal = document.getElementById('manualInputModal');
+    if (modal) {
+      modal.classList.toggle('hidden');
+      if (!modal.classList.contains('hidden')) {
+        const input = document.getElementById('manualTokenInput');
+        if (input) input.focus();
+      }
+    }
+  }
+
+  function resetScanner() {
+    const btn = document.getElementById('btnScanAgain');
+    if (btn) {
+      const origHtml = btn.innerHTML;
+      btn.innerHTML = '<span class="material-symbols-outlined text-[20px] animate-spin">sync</span><span>Re-initializing...</span>';
+      setTimeout(() => {
+        btn.innerHTML = origHtml;
+      }, 750);
+    }
+  }
+
+  function submitManualToken() {
+    const input = document.getElementById('manualTokenInput');
+    if (input && input.value.trim().length > 0) {
+      toggleManualInputModal();
+    }
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-1px_12px_rgba(0,0,0,0.06)]" data-active-classes="text-primary font-label-md font-bold"><div class="flex items-center justify-around h-16 px-space-xs"><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="admin-dashboard" href="#"><span class="material-symbols-outlined text-[24px]">dashboard</span><span class="font-label-sm text-label-sm mt-space-2xs">Dashboard</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="admin-items" href="#"><span class="material-symbols-outlined text-[24px]">restaurant_menu</span><span class="font-label-sm text-label-sm mt-space-2xs">Items</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="admin-orders" href="#"><span class="material-symbols-outlined text-[24px]">receipt_long</span><span class="font-label-sm text-label-sm mt-space-2xs">Orders</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] transition-colors text-primary font-label-md font-bold" data-path="admin-qr-scanner" href="#"><span class="material-symbols-outlined text-[24px]">qr_code_scanner</span><span class="font-label-sm text-label-sm mt-space-2xs">Scan</span></a></div></nav></body></html>
